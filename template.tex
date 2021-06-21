@@ -1,0 +1,52 @@
+\documentclass[14pt,english, margin=1cm]{article}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{titling}
+\setlength{\droptitle}{-10em}
+\usepackage{dblfloatfix}
+\pagestyle{empty}
+
+\usepackage[legalpaper, margin=1cm]{geometry}
+
+
+\newcommand{\VAR}[1]{}
+\newcommand{\BLOCK}[1]{}
+
+\begin{document}
+\noindent \textbf{UFMFMS-30-1 TBL Session \VAR{session}}\\
+
+\noindent Weekly report on the engagement of the students on the module UFMFMS-30-1: Dynamics, Modelling and Simulation (DMS).  
+
+\noindent Table~\ref{tab:pre_study_engagement} shows the percentage of students that engaged with the pre-study material. 
+Pre-study material include pre-recorded content using the Xerte platform as well as the individual readiness assurance test (iRAT).
+Data for the Xerte pre-study material is collected from Blackboard grade-centre and the iRAT data is taken from DEWIS.
+\input{table.tex}
+
+\noindent Figure~\ref{fig:trat_performance} shows how groups performed in the team readiness assurance test (tRAT) completed during the lectorial.
+Marks are allocated as follows:
+\begin{itemize}
+\setlength\itemsep{0.1em}
+\item 4 marks for question correct with first attempt.
+\item 2 marks for question correct with second attempt.
+\item 1 mark for question correct with third attempt.
+\item 0 marks for non-engagement.
+\end{itemize}
+On the y-axis of Figure~\ref{fig:trat_performance} is the group numbers and on the x-axis is the possible marks.
+The interval of the x-axis is set to the mark allocations of 0, 1, 2 and 4 to improve the readability of the graph.
+The bars of Figure~\ref{fig:trat_performance} are color-coded and correspond to a question in the tRAT.
+Question 1 is red, question 2 is blue and question 3 is purple.
+
+\begin{figure}[tbh!]
+	\centering
+	\subfloat[Lectorial group 1.]{\includegraphics[width=0.49\textwidth]{trat_session3_lectorial1_results}\label{fig:lectorial1}} \hfill 
+	\subfloat[Lectorial group 2.]{\includegraphics[width=0.49\textwidth]{trat_session3_lectorial2_results}\label{fig:lectorial2}}\\
+	\subfloat[Lectorial group 3.]{\includegraphics[width=0.49\textwidth]{trat_session3_lectorial3_results}\label{fig:lectorial3}} 
+	\caption{Group tRAT performance.}
+	\label{fig:trat_performance}
+\end{figure}
+
+\end{document}
